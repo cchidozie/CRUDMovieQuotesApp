@@ -45,6 +45,6 @@ app.post('/addQuotes', (req, res) => {
     .catch((err) => console.error(err))
 })
 
-app.listen(PORT, () => {
+app.listen(PORT || PORT, () => {
   console.log('server is listening on port ' + PORT)
 })
